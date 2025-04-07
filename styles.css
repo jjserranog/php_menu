@@ -1,0 +1,80 @@
+/* Estilos para el menú desplegable */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(192, 186, 185), rgb(19, 18, 18));
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: linear-gradient(to bottom, rgb(192, 186, 185), rgb(19, 18, 18));
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0 20px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.dropdown {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.dropdown li {
+    position: relative;
+}
+.dropdown li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 4px;
+    background: linear-gradient(to bottom, rgb(192, 186, 185), rgb(19, 18, 18));
+}
+.dropdown li a:hover {
+    background-color: #d0d0d0;
+}
+.dropdown li:hover > ul {
+    display: block;
+}
+.dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.dropdown ul li a {
+    padding: 8px 16px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); /* Ajustar la altura para incluir el footer */
+    background: linear-gradient(to bottom, rgb(192, 186, 185), rgb(19, 18, 18));
+}
+.logo-center {
+    font-size: 48px;
+    font-weight: bold;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: linear-gradient(to bottom, rgb(19, 18, 18), rgb(192, 186, 185));
+    color: #fff;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
