@@ -1,4 +1,4 @@
-/* Estilos para el menú desplegable */
+<style type=”text/css”>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -78,3 +78,4 @@ footer {
     color: #fff;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
 }
+</style>

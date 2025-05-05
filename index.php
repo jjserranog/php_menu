@@ -9,7 +9,6 @@ function generateMenu($items) {
     $parentItems = [];
     $subItems = [];
     $currentParent = null;
-
     // Separar elementos principales y subelementos
     foreach ($items as $item) {
         if (strpos($item, '-') === 0) {
@@ -49,6 +48,8 @@ function generateMenu($items) {
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta Content-type: "text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Web</title>
@@ -60,7 +61,10 @@ function generateMenu($items) {
             <img src="JJ.png" alt="Logo JJ" style="height: 80px;">
         </div>
         <nav>
-            <?php generateMenu($menuItems); ?>
+        <?php 
+             include  './styles.css'; 
+	     generateMenu($menuItems);
+	   ?>
         </nav>
     </header>
     <div class="content">
