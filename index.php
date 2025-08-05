@@ -71,6 +71,7 @@ function generateMenu($items) {
         <div class="logo-center">JJ</div>
     </div>
     <footer>
+    <div class="footer-class">
         <p>&copy; 2025 JJ. Todos los derechos reservados.</p>
     </footer>
 </body>

@@ -77,7 +77,6 @@ function generateMenu($items) {
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
         .news-container { max-width: 900px; margin: 30px auto; }
         .news-item {
             display: flex;
@@ -139,7 +138,9 @@ function generateMenu($items) {
         </div>
     </div>
     <footer>
-        <p>&copy; 2025 JJ. Todos los derechos reservados.</p>
+       <div class="footer-class">
+	<p>&copy; 2025 JJ. Todos los derechos reservados.</p>
+     </div>
     </footer>
 </body>
 </html>
