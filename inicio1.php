@@ -73,47 +73,9 @@ function generateMenu($items) {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Inicio Dinámico  y Menús</title>
+    <title>Menu Inicio1</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .news-container { max-width: 900px; margin: 30px auto; }
-        .news-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px;
-            background: #f9f9f9;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-        }
-        .news-image {
-            flex: 0 0 200px;
-            max-width: 200px;
-            height: 150px;
-            object-fit: cover;
-        }
-        .news-text {
-            padding: 20px;
-            flex: 1;
-        }
-        .logo { margin: 10px 0; }
-        .logo-center { text-align: center; font-size: 2em; margin: 30px 0; }
-        nav ul.dropdown { list-style: none; padding: 0; margin: 0; display: flex; }
-        nav ul.dropdown > li { position: relative; margin-right: 20px; }
-        nav ul.dropdown li ul { display: none; position: absolute; left: 0; top: 100%; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
-        nav ul.dropdown li:hover ul { display: block; }
-        nav ul.dropdown li a { text-decoration: none; color: #333; padding: 8px 12px; display: block; }
-        nav ul.dropdown li ul li { margin: 0; }
-        footer { text-align: center; padding: 20px; background: #eee; margin-top: 40px; }
-        @media (max-width: 600px) {
-            .news-item { flex-direction: column; }
-            .news-image { width: 100%; max-width: 100%; height: 180px; }
-            nav ul.dropdown { flex-direction: column; }
-            nav ul.dropdown > li { margin-bottom: 10px; }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -125,7 +87,7 @@ function generateMenu($items) {
         </nav>
     </header>
     <div class="content">
-        <div class="logo-center">JJ</div>
+        <div class="logo-center">Inicio</div>
         <div class="news-container">
             <?php foreach ($news as $item): ?>
                 <div class="news-item">
@@ -139,7 +101,9 @@ function generateMenu($items) {
         </div>
     </div>
     <footer>
-        <p>&copy; 2025 JJ. Todos los derechos reservados.</p>
+       <div class="footer-class">
+	<p>&copy; 2025 JJ. Todos los derechos reservados.</p>
+     </div>
     </footer>
 </body>
 </html>
