@@ -87,7 +87,14 @@ function generateMenu($items) {
         </nav>
     </header>
     <div class="content">
-        <div class="logo-center">Inicio</div>
+	<div class="logo-menu">
+           <p>I</p>
+           <p>n</p>
+	   <p>i</p>
+           <p>c</p>
+	   <p>i</p>
+           <p>o</p>
+    </div>
         <div class="news-container">
             <?php foreach ($news as $item): ?>
                 <div class="news-item">
